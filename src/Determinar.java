@@ -18,12 +18,15 @@ public class Determinar {
   }
   public static void main(String[] args) {
     Determinar juego = new Determinar();
+    UI ui = new UI(); // Instancia la clase UI para manejar la interfaz del juego
+    ui.menu();
 
-    juego.getSistema().getMatriz().print(3, 0);
+
+    /*juego.getSistema().getMatriz().print(3, 0);
 
     System.out.println("Constantes solucion:");
     for (int i = 0; i < 3; i++) {
       System.out.println("b" + (i + 1) + ": " + juego.getSistema().getConstantes()[i]);
-    }
+    } */
   }
 }
