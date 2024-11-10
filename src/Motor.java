@@ -16,7 +16,6 @@ public class Motor {
 
     public void iniciarJuego() {
         int votosSistema = 0;
-        int eleccion = 0;
         int i = 0;
         
         while (votosSistema < 3) {
