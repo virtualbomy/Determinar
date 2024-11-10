@@ -38,6 +38,15 @@ public class SistemaLineal {
       this.matriz = new Matrix(nuevaMatriz);
     } while (matriz.det() == 0);
   }
+  
+  // Actualiza la entrada en las coordenadas (fila, col) y devuelve el nuevo determinante de la matriz resultante
+  public double actualizarEntrada(int fila, int col, double nuevoValor) {
+    if (fila < 0 || fila >= 3 || col < 0 || col >=3) {
+      throw new IllegalArgumentException("Posicion invalida");
+    }
+    matriz.set(fila, col, nuevoValor);
+    return matriz.det();
+  }
 
   //Método para imprimir el sistema de ecuaciones
   public void imprimirSistema() {
