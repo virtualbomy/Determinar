@@ -40,10 +40,10 @@ public class SistemaLineal {
   }
 
   //Método para imprimir el sistema de ecuaciones
-  public void imprimirSistema(double [][] matriz, double [] constantes) {
-    System.out.println(matriz[0][0] + "x + " + matriz[0][1] + "y + " + matriz[0][2] + "z = " + constantes[0]);
-    System.out.println(matriz[1][0] + "x + " + matriz[1][1] + "y + " + matriz[1][2] + "z = " + constantes[1]);
-    System.out.println(matriz[2][0] + "x + " + matriz[2][1] + "y + " + matriz[2][2] + "z = " + constantes[2]);
+  public void imprimirSistema() {
+    System.out.printf("%.0fx + %.0fy + %.0fz = %.0f%n", matriz.get(0,0), matriz.get(0,1), matriz.get(0,2), constantes[0]);
+    System.out.printf("%.0fx + %.0fy + %.0fz = %.0f%n", matriz.get(1,0), matriz.get(1,1), matriz.get(1,2), constantes[1]);
+    System.out.printf("%.0fx + %.0fy + %.0fz = %.0f%n", matriz.get(2,0), matriz.get(2,1), matriz.get(2,2), constantes[2]);
   }
 
   // Constructor

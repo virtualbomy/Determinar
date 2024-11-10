@@ -24,13 +24,9 @@ public class Motor {
             
             // Generar un nuevo sistema de ecuaciones en cada ciclo
             sistema.generarSistemaValido();
-
-            double[][] matriz = sistema.getMatriz().getArray();  // Obtener la matriz
-            double[] constantes = sistema.getConstantes();  // Obtener el array de constantes
-
             
             // Imprimir el sistema de ecuaciones
-            sistema.imprimirSistema(matriz, constantes);
+            sistema.imprimirSistema();
             System.out.println(" ");
             System.out.print("Jugador 1: Desea Jugar con este sistema?\n 1.Si\n 2.No\n Opcion: ");
             eleccion = scanner.nextInt();
